@@ -1,0 +1,160 @@
+<!-- banding type -->
+<!-- ****************************  -->
+<!-- <h1>String Interpolation</h1> 
+<h1>{{title}}</h1>
+<h1>Property Binding</h1>
+<input type="text" [value]="username">
+
+<h1>Event Binding</h1>
+<button (click)="isCount('+')">increment</button>
+<button (click)="isCount('-')">decrement</button>
+
+
+<h1>{{count}}</h1>
+
+<button (click) ="isClicked()">Submit</button>
+<p class="isClicked() ? red : yellow">{{demoOfBinding}}</p>
+
+<button [disabled] ="isDisabled">Statue of libery</button>
+
+<h1>Two way data binding</h1>
+<input type ="text" [(ngModel)]="username">
+
+<h3>Developer Name:{{username}}</h3>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="#">css <i class="fa fa-caret-down"></i></a>
+    <a href="#">java <i class="fa fa-caret-down"></i></a>
+    <a href="#">html <i class="fa fa-caret-down"></i></a>
+  </div>
+</div> 
+ -->
+<!-- <h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title | titlecase}}</h1>
+
+
+<h1>{{per | percent:'1.2-2'}}</h1>
+<h2>{{rupay | currency:'INR'}}</h2>
+
+<p>fullDate : {{toDate | date:'fullDate'}}</p>
+<p>longDate : {{toDate | date:'longDate'}}</p>
+<p>mediumDate : {{toDate | date:'mediumDate'}}</p>
+<p>shortDate : {{toDate | date:'shortDate'}}</p>
+<p>mediumTime : {{toDate | date:'mediumTime'}}</p>
+<p>dd-MM-y : {{toDate | date:'dd-MM-y'}}</p>
+<p>dd-MM-yy HH:mm : {{toDate | date:'dd-MM-yy HH:mm'}}</p>
+ -->
+
+<!-- <h2>Event Binding</h2>
+<input type="text" (input)="onUpdate($event)">
+<button (click)="onClicked()">Submit</button>
+
+<p *ngIf="this.indCurrecyValueShow">{{this.indCurrecyValue | currency:'INR'}}</p>
+
+<ul *ngFor="let arrvalue of isArr">
+<li>{{arrvalue}}</li>
+</ul>  -->
+
+
+
+<!-- <div class="items-detail-detail" >
+<div class="items-detail-information3">
+  <div class="btn-block" >
+    <button class="btn btn-default" (click)="onDecrement()">
+      <i class="material-icons">remove</i>
+    </button>
+  </div>
+  <div class="input-group" >
+    <input type="number" value="{{counter}}" class="form-control" style="text-align:center;" >
+  </div>
+  <div class="btn-block">
+    <button class="btn btn-default" (click)="onIncrement()">
+      <i class="material-icons">add</i>
+    </button>
+  </div>
+
+</div> -->
+<!-- ********************************* -->
+
+
+
+
+
+<!-- <h1>Event binding</h1>
+ <button (click)="onClicked()">Submit</button> 
+
+
+<h1>String Interpolation</h1>
+{{username}}
+<br><br>
+{{username.toUpperCase()}}
+<br><br>
+{{username.length}}
+<br><br>
+  my name is {{username}} 
+
+   <h1>Property binding</h1>
+
+  <input type="text" value="{{username}}" disabled="{{isDisabled}}" >
+  <br><br>
+  <input type="text" [value]="username" [disabled]="isDisabled"> -->
+
+
+<!-- <h1>Event binding</h1>
+<button (click)="onClick()">Submit</button>
+<br><br>
+{{username}}  -->
+
+
+<!-- <input type="text" value="sayli" (click)="onInputClick($event)"> -->
+
+<!-- <h1>Two data binding</h1>
+<input type="text"  [(ngModel)]="username">
+<br>
+{{username}}  -->
+
+
+
+<!-- <div class="menu-container">
+  <button (click)="toggleMenu()" >Toggle menu <i id="icon" class="fa fa-caret-down"></i></button>
+  <div class="menu" *ngIf ="isMenuOPened">
+    <a>html </a><br>
+    <a>css<i class="fa fa-caret-down"></i></a><br>
+    <a>boostrap <i class="fa fa-caret-down"></i></a>
+
+  </div>
+</div>  -->
+ <div class="menu-container">
+  <button (click)="toggleMenu()" >Toggle menu <i id="icon" class="fa fa-caret-down"></i></button>
+  <div class="menu" *ngIf ="isMenuOPened">
+    <a (click)=" showMenu()" >html <i id="icon" class="fa fa-caret-right"></i></a>
+    <div class="menu1" *ngIf ="isMenuOPened">
+      <a>css <i class="fa fa-caret-right"></i></a><br>
+
+    </div>
+  
+    <a>css <i class="fa fa-caret-right"></i></a><br>
+  </div>
+</div>   
+ 
+<!-- ******************************************************* -->
+  <!-- <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)"> -->
+    
+ <!-- <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <label>name:</label>
+    <input type="text" required #name="ngModel" placeholder="enter your name" name="name" ngModel />
+    <br /><span *ngIf=" name.invalid $$ name.touched" style="color: red;">this is  not valid name*</span> <br/>
+    <label>Email:</label>
+    <input type="email" required #email="ngModel" placeholder="enter your email" name="email" ngModel />
+    <br /><span *ngIf=" email.invalid && name.touched" style="color: red;">this is  not valid email*</span> <br/>
+    <label>MobileNO:</label>
+    <input type="number" required #number="ngModel" placeholder="enter your number" name="number" ngModel />
+    <br /><span *ngIf=" number.invalid && name.touched" style="color: red;">this is  not valid number*</span> <br/>
+
+    <button>Login</button>
+  </form> -->
